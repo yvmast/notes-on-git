@@ -72,10 +72,16 @@ Delete a local branch:
 git branch -d <branch-name>
 ```
 
-Delete a local and remote branch:
+Delete a local and remote branch: (see https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches)
 
 ```
 git fetch --all --prune           # to make sure, your branches are up to date
 git branch -a                     # list all branches
 git branch -dr <branch-name>      # delete branch and remote branch
+```
+
+Delete a remote branch:
+
+```
+git push origin --delete <branch-name>
 ```
